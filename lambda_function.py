@@ -1,5 +1,6 @@
 import request
 
+
 # --------------- Intent handler ------------------
 
 
@@ -7,7 +8,7 @@ def on_intent(event):
     """ Called when the user specifies an intent request for this skill """
 
     print("INTENT HANDLER RECEIVED received intent ID " + event['request']['requestId'] +
-          "NAME = " + event['request']['intent']['name'] + 
+          "NAME = " + event['request']['intent']['name'] +
           ", sessionId= " + event['session']['sessionId'])
 
     intent_name = event['request']['intent']['name']
@@ -33,15 +34,15 @@ def on_intent(event):
     elif intent_name == "FriendReportIntent":
         return request.weekly_friend_report(event)
     elif intent_name == "MutualFriendReportIntent":
-        return  request.weekly_friend_report(event, mutual=True)
+        return request.weekly_friend_report(event, mutual=True)
     elif intent_name == "AMAZON.HelpIntent":
         return request.welcome_request_link()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
         return request.handle_session_end_request()
     else:
         raise ValueError("Invalid intent")
-    
-    
+
+
 # --------------- Session events ------------------
 
 def on_session_started(event):
@@ -74,6 +75,7 @@ def on_session_ended(event):
     """
     print("SESSION ENDED, requestId=" + event['request']['requestId'] +
           ", sessionId=" + event['session']['sessionId'])
+
 
 
 # --------------- Main handler ------------------

@@ -152,7 +152,8 @@
         "what distance {Activity} on {Date}",
         "what distance I {Activity} {Date}",
         "what I {Activity} on {Date}",
-        "what I {Activity} {Date}"
+        "what I {Activity} {Date}",
+        "how far was my {Activity} on {Date}"
       ],
       "slots": [
         {
@@ -178,27 +179,11 @@
     {
       "name": "FriendReportIntent",
       "samples": [
-        "my top friends",
-        "my friend report",
-        "friend report",
-        "following report",
         "friend {Activity} report",
-        "how far have my friends {Activity} this week",
-        "how far did my friends go this week",
-        "which friends have gone the furthest this week",
-        "which friends have {Activity} the furthest this week",
-        "what are my top friends",
-        "what are my top {Activity} friends",
-        "give my my top friends",
-        "give me my top {Activity} friends",
-        "what are my top {Activity} friends this week",
-        "what are my top friends this week",
-        "give me my top {Activity} friends this week",
-        "give my my top friends this week",
-        "what are my top {Activity} friends for this week",
-        "give me my top {Activity} friends for this week",
-        "give my my top friends for this week",
-        "how far did my friends {Activity} this week"
+        "friend report",
+        "friends",
+        "give me my friend report",
+        "give me my friend {Activity} report"
       ],
       "slots": [
         {
@@ -241,26 +226,11 @@
     {
       "name": "MutualFriendReportIntent",
       "samples": [
-        "give my followers report",
-        "followers report",
-        "mutual friend leaderboard",
-        "how far did my followers {Activity} this week",
-        "how far have my followers {Activity} this week",
-        "what are my followers {Activity} distances this week",
-        "which of my followers have {Activity} the furthest this week",
-        "give me my top followers",
-        "what are my top followers",
-        "give my my top followers {Activity} ",
-        "what are my top followers {Activity} ",
-        "what are my top followers {Activity} this week",
-        "give me my top followers {Activity} this week",
-        "what are my top followers {Activity}  for this week",
-        "give me my top followers {Activity} for this week",
-        "how far my followers {Activity} this week",
-        "mutuals",
+        "follower {Activity} report",
         "followers",
-        "how far my followers have {Activity} this week",
-        "follower {Activity} report"
+        "follower report",
+        "give me my follower report",
+        "give me my follower {Activity} report"
       ],
       "slots": [
         {

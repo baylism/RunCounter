@@ -20,13 +20,6 @@ def duration(timedelta):
 
     """
     duration = {}
-##    if type(timedelta) == 'datetime.timedelta':
-##        duration['day'] = timedelta.days
-##        minutes_temp, duration['second'] = divmod(timedelta.seconds, 60)
-##        duration['hour'], duration['minute'] = divmod(minutes_temp, 60)
-##    else:
-##        for key in ['day', 'hour', 'minute', 'second']:
-##            duration[key] = 0
     duration['day'] = timedelta.days
     minutes_temp, duration['second'] = divmod(timedelta.seconds, 60)
     duration['hour'], duration['minute'] = divmod(minutes_temp, 60)
