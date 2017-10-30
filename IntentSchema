@@ -1,0 +1,771 @@
+{
+  "intents": [
+    {
+      "name": "ActivityStatsIntent",
+      "samples": [
+        "stats",
+        "tell me my total stats",
+        "tell me my stats",
+        "tell me my all time stats",
+        "give me my total stats",
+        "give me my stats",
+        "give me my all time stats",
+        "all time stats",
+        "all of my stats",
+        "statistics",
+        "activity stats",
+        "totals",
+        "{Activity} stats",
+        "{Activity} totals",
+        "{Activity} statistics",
+        "all of my {Activity} stats",
+        "all time {Activity} stats",
+        "give me my {Activity} stats",
+        "give me my all time {Activity}  stats",
+        "tell me my {Activity} stats",
+        "tell me my all time {Activity}  stats"
+      ],
+      "slots": [
+        {
+          "name": "Activity",
+          "type": "ACTIVITY",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "AllActivityCountIntent",
+      "samples": [
+        "how many activities did I do on {Date}",
+        "how many activities did I do {Date}",
+        "how many activities did I finish on {Date}",
+        "how many activities did I finish {Date}",
+        "how many activities did I complete on {Date}",
+        "how many activities did I complete {Date}",
+        "how many activities have I done {Date}",
+        "how many activities have I finish {Date}",
+        "how many activities have I complete {Date}",
+        "how many activities I did {Date}",
+        "how many activities I finished {Date}",
+        "how many activities I completed {Date}",
+        "the number of activities I did on {Date}",
+        "the number of activities I finished on {Date}",
+        "the number of activities I completed on {Date}",
+        "the number of activities I added on {Date}",
+        "what is the number of activities I did on {Date}",
+        "what is the number of activities I finished on {Date}",
+        "what is the number of activities I completed on {Date}",
+        "what is the number of activities I added on {Date}"
+      ],
+      "slots": [
+        {
+          "name": "Date",
+          "type": "AMAZON.DATE",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "CountReportIntent",
+      "samples": [
+        "how many times did I {Activity} on {Date}",
+        "how many times did I {Activity} {Date}",
+        "how many times I {Activity} on {Date}",
+        "how many times I {Activity} {Date}",
+        "how many times I have {Activity} on {Date}",
+        "how many times I have {Activity} {Date}",
+        "how many times have I {Activity} on {Date}",
+        "how many times have I {Activity} {Date}",
+        "how many {Activity} did I do on {Date}",
+        "how many {Activity} did I do {Date}",
+        "how many {Activity} did I finish on {Date}",
+        "how many {Activity} did I finish {Date}",
+        "how many {Activity} did I complete on {Date}",
+        "how many {Activity} did I complete {Date}",
+        "how many {Activity} have I done {Date}",
+        "how many {Activity} have I finish {Date}",
+        "how many {Activity} have I complete {Date}",
+        "how many {Activity} I did {Date}",
+        "how many {Activity} I finished {Date}",
+        "how many {Activity} I completed {Date}",
+        "the number of times I {Activity} on {Date}",
+        "the number of times I {Activity} {Date}",
+        "what is the number of times I {Activity} on {Date}",
+        "what us the number of times I {Activity} {Date}",
+        "what the number of times I {Activity} on {Date} is",
+        "what the number of times I {Activity} {Date} is"
+      ],
+      "slots": [
+        {
+          "name": "Date",
+          "type": "AMAZON.DATE",
+          "samples": [
+            "{Date}",
+            "The date is {Date}",
+            "tell me about {Date}"
+          ]
+        },
+        {
+          "name": "Activity",
+          "type": "ACTIVITY",
+          "samples": [
+            "{Activity}",
+            "The activity is {Activity}",
+            "Tell me about {Activity}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DistanceReportIntent",
+      "samples": [
+        "how far did I {Activity} on {Date}",
+        "how far did I {Activity} {Date}",
+        "how far have I {Activity} on {Date}",
+        "how far have I {Activity} {Date}",
+        "how far I have {Activity} on {Date}",
+        "how far I have {Activity} {Date}",
+        "how far I {Activity} on {Date}",
+        "how far I {Activity} {Date}",
+        "how much did I {Activity} on {Date}",
+        "how much did I {Activity} {Date}",
+        "how much have I {Activity} on {Date}",
+        "how much have I {Activity} {Date}",
+        "how much I have {Activity} on {Date}",
+        "how much I have {Activity} {Date}",
+        "how much I {Activity} on {Date}",
+        "how much I {Activity} {Date}",
+        "what distance did I {Activity} on {Date}",
+        "what distance did I {Activity} {Date}",
+        "what distance {Activity} on {Date}",
+        "what distance I {Activity} {Date}",
+        "what I {Activity} on {Date}",
+        "what I {Activity} {Date}"
+      ],
+      "slots": [
+        {
+          "name": "Date",
+          "type": "AMAZON.DATE",
+          "samples": [
+            "The date is {Date}",
+            "{Date}",
+            "tell me about {Date}"
+          ]
+        },
+        {
+          "name": "Activity",
+          "type": "ACTIVITY",
+          "samples": [
+            "{Activity}",
+            "Tell me about {Activity}",
+            "The activity is {Activity}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FriendReportIntent",
+      "samples": [
+        "my top friends",
+        "my friend report",
+        "friend report",
+        "following report",
+        "friend {Activity} report",
+        "how far have my friends {Activity} this week",
+        "how far did my friends go this week",
+        "which friends have gone the furthest this week",
+        "which friends have {Activity} the furthest this week",
+        "what are my top friends",
+        "what are my top {Activity} friends",
+        "give my my top friends",
+        "give me my top {Activity} friends",
+        "what are my top {Activity} friends this week",
+        "what are my top friends this week",
+        "give me my top {Activity} friends this week",
+        "give my my top friends this week",
+        "what are my top {Activity} friends for this week",
+        "give me my top {Activity} friends for this week",
+        "give my my top friends for this week",
+        "how far did my friends {Activity} this week"
+      ],
+      "slots": [
+        {
+          "name": "Activity",
+          "type": "ACTIVITY",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "LatestActivityIntent",
+      "samples": [
+        "tell me about my latest {Activity}",
+        "latest {Activity}",
+        "last {Activity}",
+        "how was my last {Activity}"
+      ],
+      "slots": [
+        {
+          "name": "Activity",
+          "type": "ACTIVITY",
+          "samples": [
+            "{Activity}",
+            "Tell me about {Activity}",
+            "The activity is {Activity}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LatestAllActivitiesIntent",
+      "samples": [
+        "tell me about my latest activity",
+        "latest activity",
+        "last acitivity",
+        "how was my last activity"
+      ],
+      "slots": []
+    },
+    {
+      "name": "MutualFriendReportIntent",
+      "samples": [
+        "give my followers report",
+        "followers report",
+        "mutual friend leaderboard",
+        "how far did my followers {Activity} this week",
+        "how far have my followers {Activity} this week",
+        "what are my followers {Activity} distances this week",
+        "which of my followers have {Activity} the furthest this week",
+        "give me my top followers",
+        "what are my top followers",
+        "give my my top followers {Activity} ",
+        "what are my top followers {Activity} ",
+        "what are my top followers {Activity} this week",
+        "give me my top followers {Activity} this week",
+        "what are my top followers {Activity}  for this week",
+        "give me my top followers {Activity} for this week",
+        "how far my followers {Activity} this week",
+        "mutuals",
+        "followers",
+        "how far my followers have {Activity} this week",
+        "follower {Activity} report"
+      ],
+      "slots": [
+        {
+          "name": "Activity",
+          "type": "ACTIVITY",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "TimeReportIntent",
+      "samples": [
+        "how long did I {Activity} on {Date}",
+        "how long did I {Activity} {Date}",
+        "how long I {Activity} on {Date}",
+        "how long I {Activity} {Date}",
+        "for how long did I {Activity} on {Date}",
+        "for how long did I {Activity} {Date}",
+        "for how long I {Activity} on {Date}",
+        "for how long I {Activity} {Date}",
+        "for how much time did I {Activity} on {Date}",
+        "for how much time did I {Activity} {Date}",
+        "for how much time I {Activity} on {Date}",
+        "for how much time I {Activity} {Date}"
+      ],
+      "slots": [
+        {
+          "name": "Date",
+          "type": "AMAZON.DATE",
+          "samples": [
+            "{Date}",
+            "The date is {Date}",
+            "tell me about {Date}"
+          ]
+        },
+        {
+          "name": "Activity",
+          "type": "ACTIVITY",
+          "samples": [
+            "{Activity}",
+            "Tell me about {Activity}",
+            "the activity is {Activity}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WeeklyReportIntent",
+      "samples": [
+        "give me my weekly report",
+        "weekly report",
+        "my weekly report"
+      ],
+      "slots": []
+    }
+  ],
+  "types": [
+    {
+      "name": "ACTIVITY",
+      "values": [
+        {
+          "id": "Ride",
+          "name": {
+            "value": "Ride",
+            "synonyms": [
+              "rode",
+              "rides",
+              "cycle",
+              "cycling",
+              "cycles",
+              "riding",
+              "bike",
+              "biking"
+            ]
+          }
+        },
+        {
+          "id": "Kitesurf",
+          "name": {
+            "value": "Kitesurf",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Run",
+          "name": {
+            "value": "Ran",
+            "synonyms": [
+              "runs",
+              "running",
+              "jog",
+              "jogging",
+              "jogged",
+              "run",
+              "Run",
+              "ran",
+              "drove"
+            ]
+          }
+        },
+        {
+          "id": "NordicSki",
+          "name": {
+            "value": "NordicSki",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Swim",
+          "name": {
+            "value": "Swim",
+            "synonyms": [
+              "swam",
+              "swims",
+              "swimming"
+            ]
+          }
+        },
+        {
+          "id": "RockClimbing",
+          "name": {
+            "value": "RockClimbing",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Hike",
+          "name": {
+            "value": "Hike",
+            "synonyms": [
+              "hiked",
+              "hikes",
+              "hiking"
+            ]
+          }
+        },
+        {
+          "id": "RollerSki",
+          "name": {
+            "value": "RollerSki",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Walk",
+          "name": {
+            "value": "Walk",
+            "synonyms": [
+              "walked",
+              "walks",
+              "walking"
+            ]
+          }
+        },
+        {
+          "id": "Rowing",
+          "name": {
+            "value": "Rowing",
+            "synonyms": [
+              "row",
+              "rowed"
+            ]
+          }
+        },
+        {
+          "id": "AlpineSki",
+          "name": {
+            "value": "AlpineSki",
+            "synonyms": [
+              "ski",
+              "skied",
+              "skiing"
+            ]
+          }
+        },
+        {
+          "id": "Snowboard",
+          "name": {
+            "value": "Snowboard",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "BackcountrySki",
+          "name": {
+            "value": "BackcountrySki",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Snowshoe",
+          "name": {
+            "value": "Snowshoe",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Canoeing",
+          "name": {
+            "value": "Canoeing",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "StairStepper",
+          "name": {
+            "value": "StairStepper",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Crossfit",
+          "name": {
+            "value": "Crossfit",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "StandUpPaddling",
+          "name": {
+            "value": "StandUpPaddling",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "EBikeRide",
+          "name": {
+            "value": "EBikeRide",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Surfing",
+          "name": {
+            "value": "Surfing",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Elliptical",
+          "name": {
+            "value": "Elliptical",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "VirtualRide",
+          "name": {
+            "value": "VirtualRide",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "IceSkate",
+          "name": {
+            "value": "IceSkate",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "WeightTraining",
+          "name": {
+            "value": "WeightTraining",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "InlineSkate",
+          "name": {
+            "value": "InlineSkate",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Windsurf",
+          "name": {
+            "value": "Windsurf",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Kayaking",
+          "name": {
+            "value": "Kayaking",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Workout",
+          "name": {
+            "value": "Workout",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "Yoga",
+          "name": {
+            "value": "Yoga",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "Elicit.Intent-CountReportIntent.IntentSlot-Date",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Please specify a date or time period"
+        },
+        {
+          "type": "PlainText",
+          "value": "Please give me a time like 'last January' or 'last week'"
+        },
+        {
+          "type": "PlainText",
+          "value": "please give me a day, week, month or year"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-CountReportIntent.IntentSlot-Activity",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Please specify a Strava activity type"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-DistanceReportIntent.IntentSlot-Date",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Please give me a time like 'last January' or 'last week'"
+        },
+        {
+          "type": "PlainText",
+          "value": "Please specify a date or time period"
+        },
+        {
+          "type": "PlainText",
+          "value": "please give me a day, week, month or year"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-DistanceReportIntent.IntentSlot-Activity",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Please specify a Strava activity type"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-LatestActivityIntent.IntentSlot-Activity",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Please specify a Strava activity type"
+        },
+        {
+          "type": "PlainText",
+          "value": "What type of activity do you want?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-TimeReportIntent.IntentSlot-Date",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Please specify a date or time period"
+        },
+        {
+          "type": "PlainText",
+          "value": "please give me a day, week, month or year"
+        },
+        {
+          "type": "PlainText",
+          "value": "Please give me a time like 'last January' or 'last week'"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-TimeReportIntent.IntentSlot-Activity",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Please specify a Strava activity type"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "version": "1.0",
+    "intents": [
+      {
+        "name": "CountReportIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "Date",
+            "type": "AMAZON.DATE",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-CountReportIntent.IntentSlot-Date"
+            }
+          },
+          {
+            "name": "Activity",
+            "type": "ACTIVITY",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-CountReportIntent.IntentSlot-Activity"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DistanceReportIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "Date",
+            "type": "AMAZON.DATE",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-DistanceReportIntent.IntentSlot-Date"
+            }
+          },
+          {
+            "name": "Activity",
+            "type": "ACTIVITY",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-DistanceReportIntent.IntentSlot-Activity"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LatestActivityIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "Activity",
+            "type": "ACTIVITY",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-LatestActivityIntent.IntentSlot-Activity"
+            }
+          }
+        ]
+      },
+      {
+        "name": "TimeReportIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "Date",
+            "type": "AMAZON.DATE",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-TimeReportIntent.IntentSlot-Date"
+            }
+          },
+          {
+            "name": "Activity",
+            "type": "ACTIVITY",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-TimeReportIntent.IntentSlot-Activity"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
