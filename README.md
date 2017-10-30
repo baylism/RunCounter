@@ -1,7 +1,7 @@
 # HomeStraight
 
 ## Overview
-An Alexa skill to access information through the Strava API. 
+An Alexa skill to access activity information through the Strava API. 
 
 ## Features
 This implementation defines 10 intents, covering queries such as  
