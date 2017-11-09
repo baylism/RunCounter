@@ -4,7 +4,7 @@
 An Alexa skill to access activity information through the Strava API. 
 
 ## Features
-response.py defines classes for creating valid Alexa responses and for accessing the Strava API. The Lambda handler valid requests to one of 10 request types defined in request.py.
+response.py defines classes for creating valid Alexa responses and for accessing the Strava API. The Lambda handler passes valid requests to one of 10 request types defined in request.py.
 
 These are:
 
