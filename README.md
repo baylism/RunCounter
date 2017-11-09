@@ -4,7 +4,9 @@
 An Alexa skill to access activity information through the Strava API. 
 
 ## Features
-This implementation defines 10 intents, covering queries such as  
+response.py defines classes for creating valid Alexa responses and for accessing the Strava API. The Lambda handler valid requests to one of 10 request types defined in request.py.
+
+These are:
 
 #### latest activity, run or ride
 
