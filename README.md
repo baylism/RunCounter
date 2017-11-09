@@ -1,4 +1,4 @@
-# HomeStraight
+# Run Counter
 
 ## Overview
 An Alexa skill to access information through the Strava API. 
@@ -8,11 +8,11 @@ This implementation defines 10 intents, covering queries such as
 
 -latest activity, run or ride
 
-‘Ask running info for my latest run’
+‘Ask Run Counter for my latest run’
 
 -stats, running stats or cycling stats
 
-‘Give my my stats’ ‘Ask running info for my cycling stats’
+‘Give my my stats’ ‘Ask Run Counter for my cycling stats’
 
 -how far/for how long/how many times the user did any Strava activity type in a day, week, month or year.
 
@@ -21,13 +21,13 @@ This implementation defines 10 intents, covering queries such as
 
 -the user's friend (people they follow) report, friend running report or friend cycling report
 
-‘Ask running info for my friend report’ 
-‘Ask running info for my friend running report’
+‘Ask Run Counter for my friend report’
+‘Ask Run Counter for my friend running report’
 
 -the user's follower (people they follow, and who follow them) report, running report or cycling report
 
-‘Ask running info for my follower report’ 
-‘Ask running info for my follower running report’
+‘Ask Run Counter for my follower report’
+‘Ask Run Counter for my follower running report’
 
 ## Implementation
 The skill has been developed and tested using Amazon lambda.
