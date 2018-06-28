@@ -1,10 +1,10 @@
 # Run Counter
 
 ## Overview
-An Alexa skill to access activity information through the Strava API. 
+An Alexa skill to access activity information through the Strava API. Developed and tested on AWS Lambda.
 
 ## Features
-response.py defines classes for creating valid Alexa responses and for accessing the Strava API. The Lambda handler passes valid requests to one of 10 request types defined in request.py.
+`response.py` defines classes for creating Alexa responses and for accessing the Strava API. Valid requests are passed by a handler in `lambda_function.py` to one of 10 request types defined in `request.py`.
 
 These are:
 
@@ -34,7 +34,7 @@ These are:
 See the intent schema for a more comprehensive list of possible queries.
 
 ## Implementation
-The skill has been developed and tested using Amazon lambda.
+The skill has been developed and tested using AWS Lambda.
 
 OAuth authentication for the Strava API is handled by Alexa Skills Service. 
 
